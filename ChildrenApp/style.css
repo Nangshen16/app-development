@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+.title{
+    text-align: center;
+    color:#355C7D;
+    /* margin-top: 100px; */
+    font-size: 3vw;
+}
+.t1{
+    font-size: 2vw;
+}
+img{
+    
+    display: block;
+    width: 100%;
+    
+    
+}
+.titleImgs {
+    width: 100%;
+    display: block;
+    
+    display: flex;
+    /* justify-content: center; Center horizontally */
+    /* align-items: center; Center vertically */
+    /* height: 100vh; Adjust this as needed for your container's height */
+    padding: 100px; /* Add some padding to the container */
+    box-sizing: border-box; /* Include padding in the container's dimensions */
+   
+    
+}
+.titleImgs img{
+    /* padding-left: 20%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3); */
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* width: 60%;
+    margin: auto;
+    border: solid 10px seagreen;
+    border-radius: 12px; */
+  
+}
+
+
+.category{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    
+
+
+}
+.category > div {
+    position: relative;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.category1 a , .category2 a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: fixed;
+
+}
+.category img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.category img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.hovelink{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(30, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    
+    
+}
+.hovelink:hover {
+    color: #F67280;
+}
+.category1, .category2{
+    position: relative;
+    width: 400px;
+    margin: 20px ;
+    /* transition: ease-in-out 300ms; */
+
+    
+}
+.category1 a, .category2 a{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    transform: translate(-60%, -50%);
+    color:#F67280;
+}
+
+
+/* ------modal for alphabet file css------- */
+
+
+/* modal window  */
+
+.cardwindow{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    /* background-color:blue ; */
+}
+
+
+.card >img , .card2>img, .card3>img {
+   width: 100%;
+   padding-left: 20%;
+   padding-right: 20%;
+   height: auto;
+   margin-left:auto ;
+   margin-right: auto;
+   
+}
+/* ----alphabet page----- */
+.alp, .cardwindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+
+.alp > div, .cardwindow > div {
+    margin: 0 10px;
+    
+}
+
+.alp img , .cardwindow img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alp img:hover, .cardwindow img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* .card0,.card, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10 {
+    width: 50%;
+    padding-top: 5%;
+    margin-left:auto ;
+    margin-right: auto;
+    cursor: pointer;
+    background-color:cornflowerblue;
+
+}
+
+.card:hover, .card2:hover{
+    transform: scale(1.0);
+
+} */
+
+.modalWindow1, .modalWindow2, .modalWindow3,.modalWindow1foralphabet, .modalWindow2foralphabet {
+    background-color: rgb(30,30,30,0.8);
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    position: fixed;
+    display: none;
+}
+
+.modalcontent1, .modalcontent2, .modalcontent3, .modalcontent1foralphabet{
+    width: 60%;
+    height: 80%;
+    margin: 5% auto auto;
+    background-color: white;
+    display: flex;
+}
+/* ------image of the modalcontent1------- */
+.modalImg, .modalImg2, .modalImg3, .modalImgforalphabet, .modalImg2foralphabet{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    
+}
+.modalImg2 > p {
+    
+    color: aquamarine;
+}
+.close, .close2{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.close2 > p {
+    
+    border: 2px red solid;
+    background-color: gray;
+    color: yellow;
+}
+
+/* Footer */
+.footer{
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    background-color: black;
+    color:beige;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+/* collapse Nav Menu */
+.header-container, .navMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0,0,0,.0.8);
+    
+}
+
+.header-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.header-container .t1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.header-container > div, .navMenu> div{
+    padding: 20px;
+
+}
+
+.header-container > div:nth-child(1){
+    margin-left: auto;
+
+}
+
+.headerNav {
+    background-color: #6C5B7B;
+    color: white;
+    padding: 10px 0;
+    
+    
+
+}
+
+.headerNav  a  {
+    text-decoration: none;
+    color: bisque;
+    font-size: 2vw;
+    
+
+}
+
+.navMenu {
+    display: none;
+
+}
+
+.navMenu > div:nth-child(2){
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.collapsemenu {
+    background-color: rgb(152, 255, 192);
+    padding: 20px;
+    display: none;
+}
+.collapsemenu > div {
+    padding: 20px;
+    color: bisque;
+}
+
+.collapsemenu >div:hover{
+    border-bottom: white 2px brown;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: chartreuse;
+    font-weight: bolder;
+}
+.closeToOpen{
+    display: block;
+}
+
+
+@media screen and (max-width:900px) {
+    .header-container{
+        display: none;
+    }
+    .titleImgs img{
+        display:block;
+    }
+    .navMenu{
+        display: flex;
+    }
+    
+}
+
