@@ -59,6 +59,7 @@ img{
     border-radius: 12px; */
   
 }
+/* //collapse Menu */
 
 
 .category{
@@ -139,6 +140,7 @@ img{
     display: flex;
     width: 100%;
     height: auto;
+    padding: 200px;
     
     /* background-color:blue ; */
 }
@@ -159,6 +161,7 @@ img{
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    padding: 200px;
     
 }
 
@@ -250,28 +253,31 @@ img{
 }
 
 /* collapse Nav Menu */
-.header-container, .navMenu {
+.header-container, .navMenu1 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(0,0,0,.0.8);
+    /* justify-content: space-around;  */
+    width: 100%;
+    color:white;
+    /* align-items: center; */
+    background-color: rgb(128, 0, 128,0.9);
     
 }
 
 .header-container a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 10 15px;
     font-size: 18px;
 }
 
 .header-container .t1 {
     font-size: 24px;
     font-weight: bold;
+    
 }
 
 
-.header-container > div, .navMenu> div{
+.header-container > div, .navMenu1> div{
     padding: 20px;
 
 }
@@ -282,12 +288,12 @@ img{
 }
 
 .headerNav {
-    background-color: #6C5B7B;
-    color: white;
-    padding: 10px 0;
-    
-    
+    position: fixed;
+    top: 0%;
+    left:0%;
+    right:0%;
 
+    
 }
 
 .headerNav  a  {
@@ -298,27 +304,33 @@ img{
 
 }
 
-.navMenu {
+.navMenu1 {
     display: none;
+    /* justify-content: space-between;
+    align-items: center; */
 
 }
+.menubtn1{
+    cursor: pointer;
+    
+}
 
-.navMenu > div:nth-child(2){
+.navMenu1 > div:nth-child(2){
     margin-left: auto;
     cursor: pointer;
 }
 
-.collapsemenu {
-    background-color: rgb(152, 255, 192);
+.collapsemenu1 {
+    background-color: rgb(40, 30, 30, 0.8);
     padding: 20px;
     display: none;
 }
-.collapsemenu > div {
+.collapsemenu1 > div {
     padding: 20px;
     color: bisque;
 }
 
-.collapsemenu >div:hover{
+.collapsemenu1 >div:hover{
     border-bottom: white 2px brown;
     cursor: pointer;
     font-size: 1.5rem;
@@ -335,11 +347,16 @@ img{
         display: none;
     }
     .titleImgs img{
-        display:block;
+        display:flex;
     }
-    .navMenu{
-        display: flex;
+    .navMenu1{
+        display: block;
     }
+    .menubtn1{
+        float: right;
+        display: block;
+    }
+    
     
 }
 

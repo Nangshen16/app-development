@@ -74,6 +74,7 @@ window.addEventListener("click", function(event){
 
 
 
+
 //collect element for modal window for alphabet
 let modalWindow1foralphabet = document.querySelector(".modalWindow1foralphabet");
 let ka =document.querySelector(".ka");
@@ -130,15 +131,16 @@ window.addEventListener("click", function(event){
 // ---------DROP DOWN MENU----------
 //collect element
 
-let menubtn= document.querySelector(".menubtn1");
-let collapsemenu = document.querySelector(".collapsemenu");
+ let menubtn1= document.querySelector(".menubtn1");
+ let collapsemenu1 = document.querySelector(".collapsemenu1");
 
-//add a click event to open the collapsible menu
-menubtn.addEventListener("click", function(){
+ //add a click event to open the collapsible menu
+menubtn1.addEventListener("click", function(){
     
-    collapsemenu.classList.toggle("closeToOpen")
+    collapsemenu1.classList.toggle("closeToOpen")
 
-})
+ })
+
 // ----audio will play------
 function playAudio(audioId) {
     var audio = document.getElementById(audioId);
