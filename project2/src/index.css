@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  background-color:black;
+}
+
+.title, .headertitle{
+  text-align: center;
+  padding-top: 1%;
+  color: aliceblue;
+  
+  height: 20%;
+}
+
+/* styling Navbars */
+.navbar {
+  background-color:cadetblue;
+  display: flex;
+  color: crimson;
+  padding: 20px;
+}
+
+.navbar div:nth-child(2){
+  margin-left: auto;
+
+}
+.btngroup button{
+  background-color: crimson;
+  color: aliceblue;
+  border: 2px solid burlywood;
+  padding: 20px;
+  border-radius:5px;
+}
+.btngroup a{
+  color: white;
+  text-decoration: none;
+}
+
+.btngroup button:hover{
+  font-weight: bolder;
+  text-decoration:wavy;
+}
+.t1 a{
+  color: chartreuse;
+  text-decoration: none;
+  font-size: 20px;
+ 
+}
+/* text deco for home */
+.header{
+  color: crimson;
+  
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  
+
+}
+img{
+  width: 100%;
+  display: block;
+}
+.card {
+  width: 300px;
+  border: solid gray 2px;
+  background-color:crimson; 
+  border-radius: 12px;
+  margin: 15px;
+  padding: 15px;
+  transition: ease-in-out 300ms;
+}
+
+.card:hover{
+  cursor: pointer;
+  background-color: pink;
+  box-shadow: 0px 0px 1px 5px green;
+  transform: translate(10px);
+}
+.content{
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.comment{
+  color: white;
+
+}
