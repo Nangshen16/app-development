@@ -1,0 +1,11 @@
+.component-title{
+    background-color: chocolate;
+}
+.btncart,.btn_out_stock{
+    background-color: crimson;
+    color: white;
+}
+.btncart:disabled, .btn_out_stock:disabled{
+    background-color: blue;
+    cursor: none;
+}
