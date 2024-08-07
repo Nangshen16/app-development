@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: solid gray 2px;
+    border-radius: 20px;
+}
+
+.formtitle{
+    text-align: center;
+    color: darkblue;
+}
+
+.form_control{
+    margin-top: 30px;
+}
+
+.form_control label{
+    display: block;
+    margin-bottom: 5px;
+    color:darkblue;
+}
+.form_control input{
+    padding: 10px;
+    width: 100%;
+    border: solid 2px gray;
+    border-radius: 5px;
+}
+
+.btnsubmit{
+    width: 100%;
+    padding: 10px;
+    color:white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+
+}
+.btnsubmit:hover{
+    background-color: crimson;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px gray;
+}
+.json_display{
+    margin-top: 50px;
+}
+
+/* Angular , ng , class validation */
+.form_control input.ng-touched.ng-valid{
+    border: greenyellow solid 3px;
+
+}
+.form_control input.ng-touched.ng-valid{
+    border: red solid 4px;
+} 
+.validMsg,.formErrMsg {
+    background-color: rgba(255,0, 0, 0.6);
+    padding: 12px;
+    color: white;
+
+}
+/* form error message  */
+.formErrMsg{
+    border: crimson solid 3px;
+
+}
+.btnsubmit:disabled, .btnsubmit:disabled:hover{
+    cursor: not-allowed;
+    background-color: rgba(200,200,200, 2);
+    font-weight: lighter;
+    box-shadow: none;
+}
